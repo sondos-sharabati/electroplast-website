@@ -5,7 +5,7 @@ export default function Home() {
   // مصفوفة الصور الحقيقية الخاصة بالمصنع
   const images = [
     "/factory.jpg", // صورة بوابة المصنع واليافطة
-    "/pip3.jpg",    // صورة صالة الإنتاج الداخلي والمواسير
+    "/factory1.png",    // صورة صالة الإنتاج الداخلي والمواسير
     "/pipe1.jpg"    // صورة لفيّات الأنابيب الملونة
   ];
 
@@ -27,19 +27,28 @@ export default function Home() {
         {/* Top Section: Logo & Main Navigation */}
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           
-          {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <div className="h-10 w-auto flex items-center">
-              <img 
-                src="/1.png" 
-                alt="Electroplast Logo" 
-                className="h-full w-auto object-contain"
-              />
-            </div>
-            <span className="text-2xl font-black text-blue-950 tracking-wider">
-               Faisal Al-Sharbati & Partners
-            </span>
-          </div>
+         {/* Logo & Company Title */}
+<div className="flex items-center space-x-3 rtl:space-x-reverse">
+  <div className="h-12 w-auto flex items-center">
+    <img 
+      src="/1.png" 
+      alt="Electroplast Logo" 
+      className="h-full w-auto object-contain"
+    />
+  </div>
+  
+  <div className="flex flex-col">
+    <h3 className="text-lg font-bold text-blue-950 leading-snug">
+      شركة فيصل الشرباتي وشركاه
+    </h3>
+    <span className="text-xs font-semibold text-blue-900 tracking-wider">
+      Fisal AL-Sharbati & Partners Co.
+    </span>
+    <span className="text-[10px] text-blue-600 font-medium uppercase tracking-tight">
+      Electrical plastic industries
+    </span>
+  </div>
+</div>
 
           {/* Navigation Links */}
           <nav className="hidden md:flex items-center space-x-8 text-base font-bold">
@@ -112,7 +121,7 @@ export default function Home() {
             {/* Right Column - Image */}
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-100">
               <img 
-                src="/pip3.jpg" 
+                src="/factory1.png" 
                 alt="Faisal Al-Sharbati Factory" 
                 className="w-full h-[380px] object-cover"
               />
@@ -122,75 +131,61 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4. Contact Information Section (مطابق للتصميم المرفق بالصورة) */}
-      <section id="contact" className="py-20 bg-white border-t">
-        <div className="max-w-6xl mx-auto px-6">
-          
-          {/* Title & Subtitle */}
-          <div className="text-center mb-16 space-y-2">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-700">
-              Contact Information
-            </h2>
-            <p className="text-gray-500 text-base">
-              Let's talk about how we can help you?
-            </p>
-          </div>
+     <footer className="bg-slate-900 text-slate-300 py-12 px-6 border-t border-slate-800">
+  <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    
+    {/* معلومات الشركة */}
+    <div>
+      <h3 className="text-xl font-bold text-white mb-2">
+        شركة فيصل الشرباتي وشركاه
+      </h3>
+      <p className="text-sm text-slate-400 font-medium mb-1">
+        Fisal AL-Sharbati & Partners Co.
+      </p>
+      <p className="text-xs text-blue-400 uppercase tracking-wider font-semibold">
+        Electrical plastic industries
+      </p>
+    </div>
 
-          {/* Contact Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-            
-            {/* 1. E-mail Address */}
-            <div className="flex flex-col items-center space-y-4">
-              <div className="text-sky-500">
-                <svg className="w-16 h-16 stroke-current" fill="none" viewBox="0 0 24 24" strokeWidth="1.5">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-gray-700">E-mail Address</h3>
-              <a href="mailto:electroplastjo@gmail.com" className="text-gray-500 hover:text-sky-500 transition text-base">
-                electroplastjo@gmail.com
-              </a>
-            </div>
+    {/* العنوان */}
+    <div>
+      <h4 className="text-lg font-semibold text-white mb-3">Location</h4>
+      <p className="text-sm leading-relaxed text-slate-300">
+       Abu Alanda Al Hizam Al Daeri St. Complex No 8, Amman - Jordan <br />
+      </p>
+      
+    </div>
 
-            {/* 2. Phone Number */}
-            <div className="flex flex-col items-center space-y-4">
-              <div className="text-sky-500">
-                <svg className="w-16 h-16 stroke-current" fill="none" viewBox="0 0 24 24" strokeWidth="1.5">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-gray-700">Phone Number</h3>
-              <div className="flex flex-col space-y-1 text-sky-500 font-semibold text-lg">
-                <a href="tel:+962799595236" className="hover:underline">
-                  +962799595236
-                </a>
-               
-              </div>
-            </div>
+    {/* تفاصيل الاتصال */}
+    <div>
+      <h4 className="text-lg font-semibold text-white mb-3"> Contact Us</h4>
+      <ul className="space-y-2 text-sm">
+        <li>
+         <span className="text-slate-400">phone: </span>
 
-            {/* 3. Address */}
-            <div className="flex flex-col items-center space-y-4">
-              <div className="text-sky-500">
-                <svg className="w-16 h-16 stroke-current" fill="none" viewBox="0 0 24 24" strokeWidth="1.5">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-gray-700">Address</h3>
-              <p className="text-gray-500 text-base">
-                Jordan - Amman
-              </p>
-            </div>
+          <a href="tel:0096264165296" className="hover:text-blue-400 transition-colors dir-ltr inline-block">
+            00962 6 4165296
+          </a>
+        </li>
+        <li>
+          <span className="text-slate-400">FAX:</span>
+          <span className="dir-ltr inline-block">00962 6 4163283</span>
+        </li>
+        <li>
+          <span className="text-slate-400">Mail:</span>
+          <a href="mailto:alburaqfactoryad@gmail.com" className="hover:text-blue-400 transition-colors">
+            alburaqfactoryad@gmail.com
+          </a>
+        </li>
+      </ul>
+    </div>
 
-          </div>
-
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="bg-blue-950 text-white text-center py-6 text-sm border-t border-blue-900">
-        <p>© {new Date().getFullYear()} ELECTROPLAST - FAISAL AL-SHARBATI & PARTNERS. ALL RIGHTS RESERVED.</p>
-      </footer>
+  </div>
+  
+  <div className="max-w-7xl mx-auto mt-8 pt-6 border-t border-slate-800 text-center text-xs text-slate-500">
+    © {new Date().getFullYear()} Fisal AL-Sharbati & Partners Co. All rights reserved.
+  </div>
+</footer>
 
     </div>
   );
