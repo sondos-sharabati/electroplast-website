@@ -4,9 +4,9 @@ import React, { useState, useEffect } from 'react';
 export default function Home() {
   // مصفوفة الصور الحقيقية الخاصة بالمصنع
   const images = [
-    "/factory.jpg", // صورة بوابة المصنع واليافطة
+    "/pip4.jpg", // صورة بوابة المصنع واليافطة
     "/factory1.png",    // صورة صالة الإنتاج الداخلي والمواسير
-    "/pipe1.jpg"    // صورة لفيّات الأنابيب الملونة
+    "/pip5.jpg"    // صورة لفيّات الأنابيب الملونة
   ];
 
   const [currentImage, setCurrentImage] = useState(0);
